@@ -1,0 +1,113 @@
+//
+//  PrefixHeader.pch
+//  MyProduct
+//
+//  Created by Bing on 16/4/29.
+//  Copyright © 2016年 Bing. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "UIView+LGBExtension.h"
+#import "MJRefresh.h"
+#import "AFNetworking.h"
+#import "UIImageView+WebCache.h"
+#import "LGBVerticalButton.h"
+#import "Masonry.h"
+#import "MBProgressHUD.h"
+
+
+
+#define LGBScreenW [UIScreen mainScreen].bounds.size.width
+#define LGBScreenH [UIScreen mainScreen].bounds.size.height
+
+#define LGBTitlesViewH  35
+#define LGBTitlesViewY  64
+#define LGBTopicCellMargin 5
+
+#define LGBTableBarH 49
+#define kNavbarHeight ((kDeviceVersion>=7.0)? 64 :44 )
+#define kIOS7DELTA   ((kDeviceVersion>=7.0)? 20 :0 )
+#define kDeviceVersion [[UIDevice currentDevice].systemVersion floatValue]
+
+
+#define LGBColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0  alpha:1.0];
+
+#define LGBGlobalBg LGBColor(220,220,220);
+#define WS(weakSelf) __weak __typeof(&*self)weakSelf = self;
+
+
+//头条
+#define HeaderURL @"http://dynamic.app.m.v1.cn/www/dynamic.php?mod=mob&ctl=appfoucs&act=getfoucslist&cid=0&p=%d&pcode=010110000&version=4.3&devid=866568026648468"
+
+//新闻
+#define NewsURL @"http://dynamic.app.m.v1.cn/www/dynamic.php?mod=mob&ctl=category&act=gettotallist&cid=9&p=%d&pcode=010110000&version=4.3&devid=866568026648468"
+
+//娱乐
+#define PopNewsURL @"http://dynamic.app.m.v1.cn/www/dynamic.php?mod=mob&ctl=category&act=gettotallist&cid=17&p=%d&pcode=010110000&version=4.3&devid=866568026648468"
+
+//财经
+#define FinancialURL @"http://dynamic.app.m.v1.cn/www/dynamic.php?mod=mob&ctl=category&act=gettotallist&cid=23&p=%d&pcode=010110000&version=4.3&devid=866568026648468"
+//小品
+#define SketchURL @"http://dynamic.app.m.v1.cn/www/dynamic.php?mod=mob&ctl=category&act=gettotallist&cid=25&p=%d&pcode=010110000&version=4.3&devid=866568026648468"
+
+//搞笑
+#define FunnyURL @"http://dynamic.app.m.v1.cn/www/dynamic.php?mod=mob&ctl=category&act=gettotallist&cid=6&p=%d&pcode=010110000&version=4.3&devid=866568026648468"
+
+//音乐
+#define MusicURL @"http://dynamic.app.m.v1.cn/www/dynamic.php?mod=mob&ctl=category&act=gettotallist&cid=32&p=%d&pcode=010110000&version=4.3&devid=866568026648468"
+
+//开眼
+#define EyesURL @"http://dynamic.app.m.v1.cn/www/dynamic.php?mod=mob&ctl=category&act=gettotallist&cid=29&p=%d&pcode=010110000&version=4.3&devid=866568026648468"
+
+//VR
+#define VRURL @"http://dynamic.app.m.v1.cn/www/dynamic.php?mod=mob&ctl=category&act=gettotallist&cid=38&p=%d&pcode=010110000&version=4.3&devid=866568026648468"
+
+//旅游
+#define TravelURL @"http://dynamic.app.m.v1.cn/www/dynamic.php?mod=mob&ctl=category&act=gettotallist&cid=15&p=%d&pcode=010110000&version=4.3&devid=866568026648468"
+
+//健康
+#define HealthyURL @"http://dynamic.app.m.v1.cn/www/dynamic.php?mod=mob&ctl=category&act=gettotallist&cid=28&p=%d&pcode=010110000&version=4.3&devid=866568026648468"
+
+//星座
+#define ConstellationURL @"http://dynamic.app.m.v1.cn/www/dynamic.php?mod=mob&ctl=category&act=gettotallist&cid=31&p=%d&pcode=010110000&version=4.3&devid=866568026648468"
+
+//美食
+#define FoodURL @"http://dynamic.app.m.v1.cn/www/dynamic.php?mod=mob&ctl=category&act=gettotallist&cid=8&p=%d&pcode=010110000&version=4.3&devid=866568026648468"
+
+//亲子
+#define BabyURL @"http://dynamic.app.m.v1.cn/www/dynamic.php?mod=mob&ctl=category&act=gettotallist&cid=27&p=%d&pcode=010110000&version=4.3&devid=866568026648468"
+
+//牛人
+#define GeniusURL @"http://dynamic.app.m.v1.cn/www/dynamic.php?mod=mob&ctl=category&act=gettotallist&cid=26&p=%d&pcode=010110000&version=4.3&devid=866568026648468"
+
+//汽车
+#define CarURL @"http://dynamic.app.m.v1.cn/www/dynamic.php?mod=mob&ctl=category&act=gettotallist&cid=18&p=%d&pcode=010110000&version=4.3&devid=866568026648468"
+
+//军事
+#define MilitaryURL @"http://dynamic.app.m.v1.cn/www/dynamic.php?mod=mob&ctl=category&act=gettotallist&cid=22&p=%d&pcode=010110000&version=4.3&devid=866568026648468"
+
+//科技
+#define STURL @"http://dynamic.app.m.v1.cn/www/dynamic.php?mod=mob&ctl=category&act=gettotallist&cid=19&p=%d&pcode=010110000&version=4.3&devid=866568026648468"
+
+//男神
+#define MenURL @"http://dynamic.app.m.v1.cn/www/dynamic.php?mod=mob&ctl=category&act=gettotallist&cid=36&p=%d&pcode=010110000&version=4.3&devid=866568026648468"
+
+//体育
+#define SportsURL @"http://dynamic.app.m.v1.cn/www/dynamic.php?mod=mob&ctl=category&act=gettotallist&cid=13&p=%d&pcode=010110000&version=4.3&devid=866568026648468"
+
+//糗百 文字段子
+#define WordURL @"http://m2.qiushibaike.com/article/list/text?page=%zd&count=30"
+#define CommentURL @"http://m2.qiushibaike.com/article/%@/comments?page=1&count=50"
+
+
+//头条详情
+#define DetailUrl @"http://static.app.m.v1.cn/www/mod/mob/ctl/videoDetails/pcode/010110000/version/4.3/act/get/vid/%@.mindex.html"
+
+#define LiveRecommond @"http://ykrec.youku.com/personal/packed/list.json?guid=e875503193b6fbb7a411566ee9005dbe&v=41&module=21&pg=16&pl=20&pn=%zd&apptype=23"
+#define LiveLive @"http://ykrec.youku.com/personal/packed/list.json?guid=e875503193b6fbb7a411566ee9005dbe&v=41&module=21&pg=16&pl=20&pn=%zd&apptype=23"
+
+
+
+#endif /* PrefixHeader_pch */

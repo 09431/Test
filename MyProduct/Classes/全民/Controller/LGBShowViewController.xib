@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LGBShowViewController">
+            <connections>
+                <outlet property="bofangLabel" destination="7Yh-hr-vL8" id="EPb-Kk-cJP"/>
+                <outlet property="shareLabel" destination="mY0-yX-lt6" id="JIa-XL-FuZ"/>
+                <outlet property="tableView" destination="4tR-7P-g0x" id="Mb6-ch-PPq"/>
+                <outlet property="titleLabel" destination="xb5-0Y-bgv" id="GvW-PL-krJ"/>
+                <outlet property="view" destination="iN0-l3-epB" id="kse-jv-D7N"/>
+                <outlet property="zenLabel" destination="Psk-3u-k1N" id="PoN-u9-VLS"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ft-Xo-px7">
+                    <rect key="frame" x="0.0" y="270" width="414" height="85"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="videoPlayer_zan" translatesAutoresizingMaskIntoConstraints="NO" id="X4i-x6-gv4">
+                            <rect key="frame" x="20" y="50" width="29" height="24"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="3Ta-fB-3hq"/>
+                                <constraint firstAttribute="width" constant="29" id="rjE-dZ-6tc"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Psk-3u-k1N" userLabel="zanLabel">
+                            <rect key="frame" x="57" y="51" width="50" height="21"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="lwR-T3-VCI"/>
+                                <constraint firstAttribute="width" constant="50" id="wlc-HE-5JZ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mY0-yX-lt6" userLabel="fenxiangLabel">
+                            <rect key="frame" x="162" y="51" width="50" height="21"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="Exs-JC-GGh"/>
+                                <constraint firstAttribute="width" constant="50" id="PKQ-2J-X4J"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Yh-hr-vL8" userLabel="bofangLabel">
+                            <rect key="frame" x="351" y="53" width="50" height="21"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="Y3n-8e-dU8"/>
+                                <constraint firstAttribute="width" constant="50" id="zo6-AA-9xn"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="videoPlayer_fenxiangshu" translatesAutoresizingMaskIntoConstraints="NO" id="4tB-PV-601">
+                            <rect key="frame" x="125" y="50" width="29" height="24"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="29" id="IHe-q1-aC6"/>
+                                <constraint firstAttribute="height" constant="24" id="Moc-7z-aGF"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="videoPlayer_bofangshu" translatesAutoresizingMaskIntoConstraints="NO" id="LMw-1h-dr9">
+                            <rect key="frame" x="314" y="51" width="29" height="24"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="29" id="4Ds-sD-8um"/>
+                                <constraint firstAttribute="height" constant="24" id="wWY-6A-JnU"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xb5-0Y-bgv" userLabel="标题">
+                            <rect key="frame" x="20" y="8" width="374" height="40"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="egS-nh-1nu"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="X4i-x6-gv4" firstAttribute="leading" secondItem="5ft-Xo-px7" secondAttribute="leading" constant="20" id="2IF-fo-uNI"/>
+                        <constraint firstAttribute="trailing" secondItem="xb5-0Y-bgv" secondAttribute="trailing" constant="20" id="7wf-uQ-m3u"/>
+                        <constraint firstItem="mY0-yX-lt6" firstAttribute="leading" secondItem="4tB-PV-601" secondAttribute="trailing" constant="8" id="DbD-HF-0uY"/>
+                        <constraint firstAttribute="height" constant="85" id="Fzj-7j-UJo"/>
+                        <constraint firstItem="LMw-1h-dr9" firstAttribute="centerY" secondItem="7Yh-hr-vL8" secondAttribute="centerY" id="GqG-L7-6bF"/>
+                        <constraint firstItem="mY0-yX-lt6" firstAttribute="centerY" secondItem="4tB-PV-601" secondAttribute="centerY" id="KUh-Ti-wb4"/>
+                        <constraint firstItem="4tB-PV-601" firstAttribute="leading" secondItem="X4i-x6-gv4" secondAttribute="trailing" constant="76" id="SAJ-ie-DbL"/>
+                        <constraint firstItem="4tB-PV-601" firstAttribute="bottom" secondItem="X4i-x6-gv4" secondAttribute="bottom" id="gb8-tT-mi6"/>
+                        <constraint firstAttribute="trailing" secondItem="7Yh-hr-vL8" secondAttribute="trailing" constant="13" id="gkL-NH-gcd"/>
+                        <constraint firstItem="Psk-3u-k1N" firstAttribute="centerY" secondItem="X4i-x6-gv4" secondAttribute="centerY" id="lWY-8M-92d"/>
+                        <constraint firstAttribute="bottom" secondItem="7Yh-hr-vL8" secondAttribute="bottom" constant="11" id="oEi-6B-nO4"/>
+                        <constraint firstItem="7Yh-hr-vL8" firstAttribute="leading" secondItem="LMw-1h-dr9" secondAttribute="trailing" constant="8" id="q3R-PB-93X"/>
+                        <constraint firstItem="xb5-0Y-bgv" firstAttribute="top" secondItem="5ft-Xo-px7" secondAttribute="top" constant="8" id="sKM-Zz-K4g"/>
+                        <constraint firstItem="xb5-0Y-bgv" firstAttribute="leading" secondItem="5ft-Xo-px7" secondAttribute="leading" constant="20" id="tfN-aS-vnF"/>
+                        <constraint firstItem="Psk-3u-k1N" firstAttribute="leading" secondItem="X4i-x6-gv4" secondAttribute="trailing" constant="8" id="zLm-bF-Rsb"/>
+                        <constraint firstAttribute="bottom" secondItem="X4i-x6-gv4" secondAttribute="bottom" constant="11" id="zoG-0i-rJF"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4tR-7P-g0x">
+                    <rect key="frame" x="0.0" y="355" width="414" height="381"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="356" id="dkH-gI-vyh"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="dkH-gI-vyh"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="3oh-zV-IUV"/>
+                        <outlet property="delegate" destination="-1" id="I1m-XL-wYI"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="4tR-7P-g0x" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="39P-15-m7g"/>
+                <constraint firstAttribute="trailing" secondItem="4tR-7P-g0x" secondAttribute="trailing" id="6Pb-eM-vfA"/>
+                <constraint firstItem="5ft-Xo-px7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Cnc-Qe-MDh"/>
+                <constraint firstItem="4tR-7P-g0x" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Eei-TF-U7E"/>
+                <constraint firstItem="5ft-Xo-px7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="270" id="K00-qc-Oq8"/>
+                <constraint firstAttribute="bottom" secondItem="4tR-7P-g0x" secondAttribute="bottom" id="LJc-Yl-uO5"/>
+                <constraint firstAttribute="trailing" secondItem="5ft-Xo-px7" secondAttribute="trailing" id="Usg-u6-5eQ"/>
+                <constraint firstAttribute="trailing" secondItem="4tR-7P-g0x" secondAttribute="trailing" id="d17-Ib-zuW"/>
+                <constraint firstAttribute="bottom" secondItem="4tR-7P-g0x" secondAttribute="bottom" id="r5V-mu-gbd"/>
+                <constraint firstItem="4tR-7P-g0x" firstAttribute="top" secondItem="5ft-Xo-px7" secondAttribute="bottom" id="w5b-wH-hFo"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="39P-15-m7g"/>
+                    <exclude reference="6Pb-eM-vfA"/>
+                    <exclude reference="r5V-mu-gbd"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+    <resources>
+        <image name="videoPlayer_bofangshu" width="14" height="14"/>
+        <image name="videoPlayer_fenxiangshu" width="14" height="14"/>
+        <image name="videoPlayer_zan" width="14" height="14"/>
+    </resources>
+</document>

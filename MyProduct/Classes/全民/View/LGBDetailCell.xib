@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="detail" rowHeight="147" id="KGk-i7-Jjw" customClass="LGBDetailCell">
+            <rect key="frame" x="0.0" y="0.0" width="329" height="147"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="329" height="146.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kUK-xO-wOI">
+                        <rect key="frame" x="8" y="10" width="166" height="126.5"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="166" id="4Ln-Up-qrH"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZdB-wU-742" userLabel="timeLabel">
+                        <rect key="frame" x="120" y="108" width="42" height="21"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.86274509799999999" green="0.86274509799999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="5FC-1Z-uBn"/>
+                            <constraint firstAttribute="width" constant="42" id="7py-n6-jTy"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uGT-dL-sH1" userLabel="titleLabel">
+                        <rect key="frame" x="184" y="10" width="130" height="85"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="85" id="Rj1-fG-y78"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstItem="uGT-dL-sH1" firstAttribute="top" secondItem="kUK-xO-wOI" secondAttribute="top" id="7ao-4h-XSW"/>
+                    <constraint firstItem="ZdB-wU-742" firstAttribute="top" secondItem="kUK-xO-wOI" secondAttribute="bottom" constant="-28.5" id="BXl-NT-BHQ"/>
+                    <constraint firstAttribute="bottom" secondItem="kUK-xO-wOI" secondAttribute="bottom" constant="10" id="Pds-rp-voR"/>
+                    <constraint firstItem="kUK-xO-wOI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="Zd8-Rc-eTV"/>
+                    <constraint firstItem="ZdB-wU-742" firstAttribute="leading" secondItem="kUK-xO-wOI" secondAttribute="trailing" constant="-54" id="dWP-YV-s0F"/>
+                    <constraint firstItem="kUK-xO-wOI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="kJc-eU-qwQ"/>
+                    <constraint firstItem="uGT-dL-sH1" firstAttribute="leading" secondItem="kUK-xO-wOI" secondAttribute="trailing" constant="10" id="wmm-Xy-eHa"/>
+                    <constraint firstAttribute="trailing" secondItem="uGT-dL-sH1" secondAttribute="trailing" constant="15" id="zgR-HJ-Gaf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <connections>
+                <outlet property="picImageView" destination="kUK-xO-wOI" id="H0j-KD-Wc9"/>
+                <outlet property="timeLabel" destination="ZdB-wU-742" id="8kw-ye-qpv"/>
+                <outlet property="titleLabel" destination="uGT-dL-sH1" id="1X7-h9-ElJ"/>
+            </connections>
+            <point key="canvasLocation" x="210.5" y="332.5"/>
+        </tableViewCell>
+    </objects>
+</document>
